@@ -32,13 +32,29 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
 ## Velon Events Clone
+
+### 1st Copy Link
 ```
-npm run dev
-
+https://github.com/gupta2612/velox-events.git
+```
+### 2nd Checkout branch
+```
+git checkout 1st_demo
+```
+### 3rd Setup .env File
+`
+APP_NAME='Velox Events'
+APP_ENV=local
+APP_KEY=
+APP_DEBUG=true
+APP_URL=http://localhost
+`
+### 4th Generate ENV Key
+```
 php artisan key:generate
-
-php artisan migrate
-
+```
+### 5th Run Project
+```
 php artisan server
 ```
 
