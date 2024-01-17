@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    @yield('title')
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon.png') }}">
+    <!-- Bootstrap core CSS -->
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <!--Custom CSS-->
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css">
+    <!--Plugin CSS-->
+    <link href="{{ asset('assets/css/plugin.css') }}" rel="stylesheet" type="text/css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/fonts/line-icons.css') }}" type="text/css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+    <!-- Preloader Ends -->
+
+    <!-- header starts -->
+    <header class="main_header_area">
+        <!-- Navigation Bar -->
+        <div class="header_menu" id="header_menu">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-flex d-flex align-items-center justify-content-between w-100 pb-2 pt-2">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="{{ asset('assets/images/logo-white.png') }}" alt="image">
+                                <img src="{{ asset('assets/images/logo.png') }}" alt="image">
+                            </a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="navbar-collapse1 d-flex align-items-center" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav" id="responsive-menu">
+                                <li class="dropdown submenu active">
+                                    <a href="/" class="">Home</a>
+                                </li>
+
+                                <li><a href="/about-us" class="">About Us</a></li>
+
+                                <li class="submenu dropdown">
+                                    <a href="/services" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <i class="fas fa-caret-down ms-1" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="submenu dropdown">
+                                            <a href="/services/audio-visual-rental" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Audio Visual Rental</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/services/audio-visual-rental/audio-sound-systems">Audio & Sound Systems</a></li>
+                                                    <li><a href="/services/audio-visual-rental/lighting">Lighting</a></li>
+                                                    <li><a href="/services/audio-visual-rental/truss-roof-systems">Truss & Roof Systems</a></li>
+                                                    <li><a href="/services/audio-visual-rental/led-screens">LED Screens</a></li>
+                                                    <li><a href="/services/audio-visual-rental/staging">Staging</a></li>
+                                                </ul>
+                                        </li>
+                                        <li><a href="/services/wedding-planning">Wedding Planning</a></li>
+                                        <li><a href="/services/fabrication-backdrop-set-design" class="dropdwon-custom">Fabrication, Backdrop & Set design</a></li>
+                                        <li><a href="/services/photography-videography" class="dropdwon-custom">Photography & Videography</a></li>
+                                        <li><a href="/services/artist-management">Artist management</a></li>
+                                        <li><a href="/services/live-streaming-animation-graphic-designing" class="dropdwon-custom">Live streaming, Animation & Graphic Designing</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/career" class="">Career</a></li>
+                                <li><a href="/contact-us" class="">Contact Us</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                        <div class="register-login">
+                            <a href="/contact-us" class="nir-btn white">REQUEST A QUOTE <i class="fa fa-angle-right "></i></a>
+                        </div>
+
+                        <div id="slicknav-mobile"></div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        <!-- Navigation Bar Ends -->
+    </header>
+    <!-- header ends -->
+
+    <!-- main content starts -->
+    @yield('main-content')
+    <!-- main content ends -->
+
+    <!-- footer starts -->
+    <footer class="pt-12 pb-7" style="background-image: url({{ asset('assets/images/pexels-sascha.jpg') }});">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5 pe-lg-4">
+                    <div class="footer-about">
+                        <img src="{{ asset('assets/images/logo-white.png') }}" alt="">
+                        <p class="mt-3 mb-3 white">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio suspendisse leo neque
+                            iaculis molestie sagittis maecenas aenean eget molestie sagittis.
+                        </p>
+
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-5">
+                    <div class="footer-links">
+                        <h4 class="white mb-4">Quick link</h4>
+                        <ul class="list">
+                            <li class="pb-2"><a href="/about-us">About Us</a></li>
+                            <li class="pb-2"><a href="/">Career</a></li>
+                            <li class="pb-2"><a href="/">Contact</a></li>
+                            <li class="pb-2"><a href="/">Gallary</a></li>
+                            <li class="pb-2"><a href="/">Events Book</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <div class="footer-links">
+                        <h4 class="white mb-4">get In Touch</h4>
+                        <p class="mb-3">1616 Dubai</p>
+                        <div class="footer-contact d-flex align-items-center mb-3">
+                            <i class="fa fa-phone white fs-4"></i>
+                            <div class="footer-contact-content ps-3">
+                                <h6 class="white mb-0">955 444 1245</h6>
+                                <small class="white">For Information</small>
+                            </div>
+                        </div>
+                        <div class="footer-contact d-flex align-items-center">
+                            <i class="fa fa-envelope white fs-4"></i>
+                            <div class="footer-contact-content ps-3">
+                                <h6 class="white mb-0">info@VeloxEvents.com</h6>
+                                <small class="white">Email Address</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <div class="footer-links">
+                        <h4 class="white mb-4">Subscribe To Our Newsletter</h4>
+                        <div class="newsletter-form ">
+                            <p class="mb-3">New subscribers get 10% off your next order</p>
+                            <form action="#" method="get" accept-charset="utf-8" class="border-0">
+                                <input type="text" placeholder="Email Address" class="w-100 mb-2">
+                                <button class="nir-btn w-100">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="theme-overlay opacity-90"></div>
+    </footer>
+    <div class="footer-copyright bg-theme1">
+        <div class="container">
+            <p class="m-0 white text-center py-3">Copyright ©2024 Velox Events. All Rights Reserved Copyright</p>
+        </div>
+    </div>
+    <!-- footer ends -->
+
+    <!-- Back to top start -->
+    <div id="back-to-top">
+        <a href="#"></a>
+    </div>
+    <!-- Back to top ends -->
+
+
+    <!-- *Scripts* -->
+    <script src="{{ asset('assets/js/jquery-3.5.1.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugin.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
+    <script src="{{ asset('assets/js/custom-nav.js') }}"></script>
+</body>
+
+</html>
