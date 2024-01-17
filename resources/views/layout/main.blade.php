@@ -39,7 +39,7 @@
                     <div class="navbar-flex d-flex align-items-center justify-content-between w-100 pb-2 pt-2">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
-                            <a class="navbar-brand" href="index.html">
+                            <a class="navbar-brand" href="/">
                                 <img src="{{ asset('assets/images/logo-white.png') }}" alt="image">
                                 <img src="{{ asset('assets/images/logo.png') }}" alt="image">
                             </a>
@@ -122,8 +122,8 @@
                         <h4 class="white mb-4">Quick link</h4>
                         <ul class="list">
                             <li class="pb-2"><a href="/about-us">About Us</a></li>
-                            <li class="pb-2"><a href="/">Career</a></li>
-                            <li class="pb-2"><a href="/">Contact</a></li>
+                            <li class="pb-2"><a href="/career">Career</a></li>
+                            <li class="pb-2"><a href="/contact-us">Contact</a></li>
                             <li class="pb-2"><a href="/">Gallary</a></li>
                             <li class="pb-2"><a href="/">Events Book</a></li>
                         </ul>
